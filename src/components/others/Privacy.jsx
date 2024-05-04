@@ -38,8 +38,8 @@ class Privacy extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
-  <Breadcrumb.Item> <Link to="/privacy"> Privacy </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#BA68C8' }}> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/privacy" style={{ color: '#BA68C8' }}> Privacy </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 

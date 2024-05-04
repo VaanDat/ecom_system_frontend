@@ -59,8 +59,8 @@ export class Purchase extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
-  <Breadcrumb.Item> <Link to="/purchase"> Purchase </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#BA68C8' }}> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/purchase" style={{ color: '#BA68C8' }}> Purchase </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 
