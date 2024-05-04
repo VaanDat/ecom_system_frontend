@@ -43,7 +43,7 @@ export class Contact extends Component {
                let sendBtn = document.getElementById('sendBtn');
                let contactForm = document.getElementById('contactForm');
 
-               if(message.length==0){
+               if(message.length ==0){
                     toast.error("Please write your message");
                }
                else if(name.length==0){
@@ -64,7 +64,7 @@ export class Contact extends Component {
      MyFormData.append("message",message)
 
      axios.post(AppURL.PostContact,MyFormData).then(function (response) {
-               if(response.status==200 && response.data==1){
+               if(response.status == 200){
                     toast.success("Message Send Successfully");
                     sendBtn.innerHTML="Send";
                     contactForm.reset();

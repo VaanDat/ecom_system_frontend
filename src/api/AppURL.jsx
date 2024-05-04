@@ -1,7 +1,7 @@
 class AppURL {
      static BaseURL = "http://127.0.0.1:8000/api"
      static VisitorDetails = this.BaseURL+"/visitor"
-     static PostContact = this.BaseURL+"/postcontact"
+     static PostContact = this.BaseURL+"/contact"
      static AllSiteInfo = this.BaseURL+"/allsiteinfo"
      static AllCategoryDetails = this.BaseURL+"/allcategory"
 
