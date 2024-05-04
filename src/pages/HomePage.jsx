@@ -20,7 +20,7 @@ export class HomePage extends Component {
      }
 
      GetVisitorDetails =()=>{
-          axios.get(AppURL.VisitorDetails).then().catch()
+          axios.post(AppURL.VisitorDetails).then().catch()
      }
 
 
