@@ -51,7 +51,7 @@ class Categories extends Component {
                     <div className={this.state.mainDiv}>
                   <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2> CATEGORIES</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Explore Our Exclusive Collection Across Categories You'll Love!</p>
           </div>
 
           <Row> 

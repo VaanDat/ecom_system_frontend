@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Container,Row,Col, Form,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AppURL from '../../api/AppURL';
-import Forget from '../../assets/images/forget.jpg'
+import Forget from '../../assets/images/forget.png'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

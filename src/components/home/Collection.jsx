@@ -79,7 +79,7 @@ class Collection extends Component {
 
                    <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2> PRODUCT COLLECTION</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Introducing Our Exclusive Product Collection, Curated Just for You!</p>
           </div>
 
      <Row> 

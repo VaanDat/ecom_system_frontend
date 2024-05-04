@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Container,Row,Col, Form,Button } from 'react-bootstrap'
 import { Link,Redirect } from 'react-router-dom'
 import AppURL from '../../api/AppURL';
-import Login from '../../assets/images/login.png'
+import Login from '../../assets/images/signup.png'
 import axios from 'axios'
 
 class Register extends Component {
@@ -74,10 +74,10 @@ class Register extends Component {
      <input className="form-control m-2" type="password" placeholder="Confirm Your Password" onChange={(e)=>{this.setState({password_confirmation:e.target.value})}} />
      
      
-      <Button type="submit" className="btn btn-block m-2 site-btn-login"> Sing Up </Button>
+      <Button type="submit" className="btn btn-block m-2 site-btn-login"> Sign Up </Button>
      <br></br> <br></br>
      <hr />
-     <p> <b> Forget My Password? </b><Link to="/forget"><b> Froget Password </b> </Link> </p>
+     <p> <b> Forget My Password? </b><Link to="/forget"><b> Forget Password </b> </Link> </p>
 
      <p> <b> Already Have An Account ? </b><Link to="/login"><b> Login </b> </Link> </p>
                     

@@ -133,7 +133,7 @@ class NewArrival extends Component {
 <a className="btn btn-sm ml-2 site-btn" onClick={this.next} ><i className="fa fa-angle-right"></i></a>
 
           </h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Explore Our Exclusive Collection, Tailored Just for You!</p>
           </div>
 
                <Row>

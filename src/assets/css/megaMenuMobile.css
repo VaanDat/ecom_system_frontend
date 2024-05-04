@@ -17,7 +17,7 @@
  .active, .accordionMobile:hover {
      color: #ffffff;
      font-weight: 400;
-     background-color: #051b35;
+     background-color: #82498C;
  }
  .accordionMobile:after {
      content: '\276F';

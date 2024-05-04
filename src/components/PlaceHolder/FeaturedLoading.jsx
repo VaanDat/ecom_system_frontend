@@ -10,7 +10,7 @@ class FeaturedLoading extends Component {
 
 <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2>FEATURED PRODUCT</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Discover Our Exclusive Collection, Perfect for You!</p>
           </div>
 
                <div className="row">

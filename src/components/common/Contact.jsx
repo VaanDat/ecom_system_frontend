@@ -111,14 +111,13 @@ export class Contact extends Component {
      
                          </Col>
      
-            <Col className="p-0 Desktop m-0" md={6} lg={6} sm={6} xs={6}>
+                         <Col className="p-0 Desktop m-0" md={6} lg={6} sm={6} xs={6}>
                  <br></br><br></br>
            <p className="section-title-contact">
-           1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104
-Email: Support@easylearningbd.com
+           287/2/7 Chu Văn An, Phường 12, Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
            </p>
 
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162771.1102477064!2d-74.10054944459704!3d40.70681480276415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1627241390779!5m2!1sen!2sbd" width="550" height="450" styles="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.004740153253!2d106.69749107573634!3d10.81094825855464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291a5c6f4697%3A0x2a0b85cf44a23b92!2zMjg3LzIvNyBDaHUgVsSDbiBBbiwgUGjGsOG7nW5nIDEyLCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1714806651946!5m2!1svi!2s" width="600" height="450" styles="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                          </Col>
                     </Row>
