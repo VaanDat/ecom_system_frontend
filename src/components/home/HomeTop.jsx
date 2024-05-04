@@ -27,7 +27,7 @@ class HomeTop extends Component {
           });
 
           axios.get(AppURL.AllSlider).then(response =>{ 
-               this.setState({SliderData:response.data,isLoading:"d-none",
+               this.setState({SliderData:response.data.data,isLoading:"d-none",
                mainDiv:""});
 
          }).catch(error=>{
@@ -44,18 +44,18 @@ class HomeTop extends Component {
                <SliderLoading isLoading={this.state.isLoading} />
 
                <div className={this.state.mainDiv}>
-        <Container className="p-0 m-0 overflow-hidden" fluid={true}>
+                    <Container className="p-0 m-0 overflow-hidden" fluid={true}>
                          <Row>
                               <Col lg={3} md={3} sm={12}>
-                              <MegaMenu data={this.state.MenuData} />
+                                   <MegaMenu data={this.state.MenuData} />
                               </Col>
 
                               <Col lg={9} md={9} sm={12}>
-                              <HomeSlider data={this.state.SliderData} />
+                                   <HomeSlider data={this.state.SliderData} />
                               </Col>
                          </Row>
                     </Container>
-                    </div>
+               </div>
                </Fragment>
           )
      }

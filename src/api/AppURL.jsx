@@ -2,11 +2,11 @@ class AppURL {
      static BaseURL = "http://127.0.0.1:8000/api"
      static VisitorDetails = this.BaseURL+"/visitor"
      static PostContact = this.BaseURL+"/contact"
-     static AllSiteInfo = this.BaseURL+"/allsiteinfo"
-     static AllCategoryDetails = this.BaseURL+"/allcategory"
+     static AllSiteInfo = this.BaseURL+"/siteinfo"
+     static AllCategoryDetails = this.BaseURL+"/category"
 
      static ProductListByRemark(Remark){
-          return this.BaseURL+"/productlistbyremark/"+Remark;
+          return this.BaseURL+"/product-list-by-remark/"+Remark;
      }
 
      static ProductListByCategory(category){
@@ -17,7 +17,7 @@ class AppURL {
           return this.BaseURL+"/productlistbysubcategory/"+category+"/"+subcategory;
      }
 
-     static AllSlider = this.BaseURL+"/allslider"
+     static AllSlider = this.BaseURL+"/homeslider"
 
      static ProductDetails(code){
           return this.BaseURL+"/productdetails/"+code;

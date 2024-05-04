@@ -15,7 +15,7 @@ class HomeTopMobile extends Component {
 
      componentDidMount(){ 
           axios.get(AppURL.AllSlider).then(response =>{ 
-               this.setState({SliderData:response.data});
+               this.setState({SliderData:response.data.data});
 
          }).catch(error=>{
 

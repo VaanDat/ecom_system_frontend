@@ -29,9 +29,9 @@ class NewArrival extends Component {
 
 
      componentDidMount(){
-          axios.get(AppURL.ProductListByRemark("NEW")).then(response =>{
+          axios.get(AppURL.ProductListByRemark("New")).then(response =>{
                
-               this.setState({ProductData:response.data,isLoading:"d-none",
+               this.setState({ProductData:response.data.data,isLoading:"d-none",
                mainDiv:""});         
 
           }).catch(error=>{
@@ -49,7 +49,7 @@ class NewArrival extends Component {
                return    <div>
                 <Link className="text-link" to={"/productdetails/"+NewList.id} >
                <Card className="image-box card">
-               <img className="center" src={NewList.image} />   
+               <img alt='' className="center" src={NewList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{NewList.title}</p>
                <p className="product-price-on-card">Price : ${NewList.price}</p>
@@ -65,7 +65,7 @@ class NewArrival extends Component {
                return    <div>
                      <Link className="text-link" to={"/productdetails/"+NewList.id} >
                <Card className="image-box card">
-               <img className="center" src={NewList.image} />   
+               <img alt='' className="center" src={NewList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{NewList.title}</p>
                <p className="product-price-on-card">Price : <strike className="text-secondary">${NewList.price}</strike> ${NewList.special_price}</p>

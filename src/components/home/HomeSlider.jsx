@@ -54,7 +54,7 @@ class HomeSlider extends Component {
              const MyView = SliderData.map((SliderList,i)=>{
               return  <div key={i.toString()}>
               <img className="slider-img" src={SliderList.slider_image} />
-             </div>
+             </div> 
              })
 
           return (
