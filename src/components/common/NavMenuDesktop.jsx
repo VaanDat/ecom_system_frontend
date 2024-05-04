@@ -85,10 +85,10 @@ import AppURL from '../../api/AppURL';
           if(localStorage.getItem('token')){
                buttons = (
                     <div>
- <Link to="/favourite" className="btn"><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">3</span></sup>                  
+ <Link to="/favourite" className="btn"><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger"></span></sup>                  
                    </Link> 
 
-                   <Link to="/notification" className="btn"><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">5</span></sup>                  
+                   <Link to="/notification" className="btn"><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger"></span></sup>                  
                    </Link>
                    
                    <Link to="/profile" className="h4 btn">PROFILE</Link>
@@ -101,10 +101,10 @@ import AppURL from '../../api/AppURL';
           }else{
                buttons = (
                     <div>
- <Link to="/favourite" className="btn"><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">3</span></sup>                  
+ <Link to="/favourite" className="btn"><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger"></span></sup>                  
                    </Link> 
 
-                   <Link to="/notification" className="btn"><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">5</span></sup>                  
+                   <Link to="/notification" className="btn"><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger"></span></sup>                  
                    </Link>
                    
                    <Link to="/login" className="h4 btn">LOGIN</Link>

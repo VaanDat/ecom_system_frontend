@@ -71,9 +71,10 @@ class UserLogin extends Component {
 
                <br></br> <br></br>
      <hr />
-     <p> <b> Forget My Password? </b><Link to="/forget"><b > Forget Password </b> </Link> </p>
+     <p> <b> Forget My Password? </b><Link to="/forget" style={{ color: '#BA68C8' }}><b > Forget Password </b> </Link> </p>
 
-     <p> <b> Don't Have An Account ? </b><Link to="/register"><b> Register </b> </Link> </p>
+     <p> <b> Don't Have An Account ? </b><Link to="/register" style={{ color: '#BA68C8' }}><b> Register </b> </Link> </p>
+
                
           </Form>
 
