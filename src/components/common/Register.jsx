@@ -77,9 +77,9 @@ class Register extends Component {
       <Button type="submit" className="btn btn-block m-2 site-btn-login"> Sign Up </Button>
      <br></br> <br></br>
      <hr />
-     <p> <b> Forget My Password? </b><Link to="/forget" style={{ color: '#BA68C8' }}><b> Forget Password </b> </Link> </p>
+     <p> <b> Forget My Password? </b><Link to="/forget" style={{ color: '#E10028' }}><b> Forget Password </b> </Link> </p>
 
-     <p> <b> Already Have An Account ? </b><Link to="/login"  style={{ color: '#BA68C8' }}><b> Login </b> </Link> </p>
+     <p> <b> Already Have An Account ? </b><Link to="/login"  style={{ color: '#E10028' }}><b> Login </b> </Link> </p>
                     
                </Form>
      

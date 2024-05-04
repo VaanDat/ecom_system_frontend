@@ -37,8 +37,8 @@ class Refund extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/" style={{ color: '#BA68C8' }}> Home </Link> </Breadcrumb.Item>
-  <Breadcrumb.Item> <Link to="/refund" style={{ color: '#BA68C8' }}> Refund </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/refund" style={{ color: '#E10028' }}> Refund </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 

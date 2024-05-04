@@ -40,8 +40,8 @@ import { Link } from 'react-router-dom';
 
 <div className="breadbody">
                <Breadcrumb>
-               <Breadcrumb.Item> <Link to="/" style={{ color: '#BA68C8' }}> Home </Link> </Breadcrumb.Item>
-               <Breadcrumb.Item> <Link to="/about" style={{ color: '#BA68C8' }}> About </Link> </Breadcrumb.Item>   
+               <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
+               <Breadcrumb.Item> <Link to="/about" style={{ color: '#E10028' }}> About </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 

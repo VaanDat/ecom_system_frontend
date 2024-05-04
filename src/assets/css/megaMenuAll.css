@@ -17,7 +17,7 @@
  .active, .accordionAll:hover {
      color: #ffffff;
      font-weight: 400;
-     background-color: #BA68C8;
+     background-color: #E10028;
  }
  .accordionAll:after {
      content: '\276F';

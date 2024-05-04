@@ -12,7 +12,7 @@
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
     color: white !important;
-    background: #82498C !important;
+    background: #E10028 !important;
 }
 
 
@@ -20,11 +20,11 @@
      font-weight: 300;
      font-family: 'Roboto Condensed', sans-serif;
      color: white !important;
-     background: #82498C !important;
+     background: #E10028 !important;
  }
  
  .site-btn:active{
-     background: #82498C !important;
+     background: #E10028 !important;
  }
  
  
