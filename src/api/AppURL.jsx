@@ -10,17 +10,17 @@ class AppURL {
      }
 
      static ProductListByCategory(category){
-          return this.BaseURL+"/productlistbycategory/"+category;
+          return this.BaseURL+"/product-list-by-category/"+category;
      }
  
      static ProductListBySubCategory(category,subcategory){
-          return this.BaseURL+"/productlistbysubcategory/"+category+"/"+subcategory;
+          return this.BaseURL+"/product-list-by-subcategory/"+category+"/"+subcategory;
      }
 
      static AllSlider = this.BaseURL+"/homeslider"
 
      static ProductDetails(code){
-          return this.BaseURL+"/productdetails/"+code;
+          return this.BaseURL+"/product-detail/"+code;
      }
 
      static NotificationHistory = this.BaseURL+"/notification"
@@ -45,8 +45,8 @@ class AppURL {
 
      static addToCart = this.BaseURL+"/addtocart"
 
-     static CartCount(product_code){
-          return this.BaseURL+"/cartcount/"+product_code;
+     static CartCount(email){
+          return this.BaseURL+"/cartcount/"+email;
      }
 
      static AddFavourite(product_code,email){

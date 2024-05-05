@@ -24,8 +24,8 @@ class NavMenuDesktop extends Component {
     }
 
     componentDidMount() {
-        let product_code = this.props.product_code;
-        axios.get(AppURL.CartCount(product_code)).then((response) => {
+        let email = this.props.user?.email;
+        axios.get(AppURL.CartCount(email)).then((response) => {
             this.setState({ cartCount: response.data })
         })
     }
@@ -47,7 +47,7 @@ class NavMenuDesktop extends Component {
 
     searchRedirect() {
         if (this.state.SearchRedirectStauts === true) {
-            return <Redirect to={"/productbysearch/" + this.state.Searchkey} />
+            return <Redirect to={"/product-by-search/" + this.state.Searchkey} />
         }
     }
 
@@ -72,6 +72,7 @@ class NavMenuDesktop extends Component {
 
     render() {
         let buttons;
+        console.log("email: ", this.props.user)
         if (localStorage.getItem('token')) {
             buttons = (
                 <div>

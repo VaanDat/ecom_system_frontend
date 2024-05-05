@@ -27,7 +27,7 @@ export class FooterDesktop extends Component {
           axios.get(AppURL.AllSiteInfo).then(response =>{
                let StatusCode = response.status;
                if(StatusCode==200){
-                    let JsonData = (response.data)[0];
+                    let JsonData = (response.data.data)[0];
                     this.setState({
                          address:JsonData['address'],
                          android_app_link:JsonData['android_app_link'],

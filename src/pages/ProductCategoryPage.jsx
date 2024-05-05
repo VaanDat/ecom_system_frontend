@@ -23,7 +23,7 @@ import axios from 'axios'
           // alert(this.state.Category);
           axios.get(AppURL.ProductListByCategory(this.state.Category)).then(response =>{
                
-               this.setState({ProductData:response.data});         
+               this.setState({ProductData:response.data.data});         
 
           }).catch(error=>{
 

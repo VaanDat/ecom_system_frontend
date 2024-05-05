@@ -246,33 +246,33 @@ class ProductDetails extends Component {
      render() {
 
           let ProductAllData = this.props.data;
-          let title = ProductAllData['productList'][0]['title'];
-          let brand = ProductAllData['productList'][0]['brand'];
-          let category = ProductAllData['productList'][0]['category'];
-          let subcategory = ProductAllData['productList'][0]['subcategory'];
-          let image = ProductAllData['productList'][0]['image'];
+          let title = ProductAllData['product_list'][0]['title'];
+          let brand = ProductAllData['product_list'][0]['brand'];
+          let category = ProductAllData['product_list'][0]['category'];
+          let subcategory = ProductAllData['product_list'][0]['subcategory'];
+          let image = ProductAllData['product_list'][0]['image'];
 
           if(this.state.previewImg === "0"){
                this.setState({previewImg:image})
           }
 
-          let price = ProductAllData['productList'][0]['price'];
-          let product_code = ProductAllData['productList'][0]['product_code'];
-          let remark = ProductAllData['productList'][0]['remark'];
-          let special_price = ProductAllData['productList'][0]['special_price'];
-          let star = ProductAllData['productList'][0]['star'];
+          let price = ProductAllData['product_list'][0]['price'];
+          let product_code = ProductAllData['product_list'][0]['product_code'];
+          let remark = ProductAllData['product_list'][0]['remark'];
+          let special_price = ProductAllData['product_list'][0]['special_price'];
+          let star = ProductAllData['product_list'][0]['star'];
          
 
-     let image_one = ProductAllData['productDetails'][0]['image_one'];
-     let image_two = ProductAllData['productDetails'][0]['image_two'];
-     let image_three = ProductAllData['productDetails'][0]['image_three'];
-     let image_four = ProductAllData['productDetails'][0]['image_four'];
-     let color = ProductAllData['productDetails'][0]['color'];
-     let size = ProductAllData['productDetails'][0]['size'];
+     let image_one = ProductAllData['product_detail'][0]['image_one'];
+     let image_two = ProductAllData['product_detail'][0]['image_two'];
+     let image_three = ProductAllData['product_detail'][0]['image_three'];
+     let image_four = ProductAllData['product_detail'][0]['image_four'];
+     let color = ProductAllData['product_detail'][0]['color'];
+     let size = ProductAllData['product_detail'][0]['size'];
 
-     let product_id = ProductAllData['productDetails'][0]['product_id'];
-     let short_description = ProductAllData['productDetails'][0]['short_description'];
-     let long_description = ProductAllData['productDetails'][0]['long_description'];
+     let product_id = ProductAllData['product_detail'][0]['product_id'];
+     let short_description = ProductAllData['product_detail'][0]['short_desc'];
+     let long_description = ProductAllData['product_detail'][0]['long_desc'];
 
 
      var ColorDiv = "d-none"

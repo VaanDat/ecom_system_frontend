@@ -25,10 +25,9 @@ class ProductDetailsPage extends Component {
           window.scroll(0,0)
 
           axios.get(AppURL.ProductDetails(this.state.code)).then(response =>{
-               
-               this.setState({ProductData:response.data,isLoading:"d-none",
+               this.setState({ProductData:response.data.data,isLoading:"d-none",
                mainDiv:""});         
-
+               console.log("response: ", response.data.data)
           }).catch(error=>{
 
           });
@@ -43,7 +42,7 @@ class ProductDetailsPage extends Component {
                return (
                     <Fragment> 
                     <div className="Desktop">
-                     <NavMenuDesktop /> 
+                     <NavMenuDesktop user={User}/> 
                     </div>
      
                     <div className="Mobile">

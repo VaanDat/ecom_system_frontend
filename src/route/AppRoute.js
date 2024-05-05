@@ -42,14 +42,16 @@ class AppRoute extends Component {
 
 
      setUser = (user) => {
+          console.log("RUN HERE")
           this.setState({user:user})
      }
 
      render() {
+          console.log("userInApp: ", this.state.user)
           return (
      <Fragment>
 
-      <NavMenuDesktop user={this.state.user} setUser={this.setUser} />  
+      <NavMenuDesktop user={this.state.user} />  
 
           <Switch>
                
