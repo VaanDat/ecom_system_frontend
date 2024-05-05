@@ -332,13 +332,13 @@ class ProductDetails extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
 
-  <Breadcrumb.Item> <Link to={"/productcategory/"+category}> {category } </Link> </Breadcrumb.Item> 
+  <Breadcrumb.Item> <Link to={"/productcategory/"+category} style={{ color: '#E10028' }}> {category } </Link> </Breadcrumb.Item> 
 
-  <Breadcrumb.Item> <Link to={"/productsubcategory/"+category+"/"+subcategory}> {subcategory } </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to={"/productsubcategory/"+category+"/"+subcategory} style={{ color: '#E10028' }}> {subcategory } </Link> </Breadcrumb.Item>
 
-    <Breadcrumb.Item> <Link to={"/productdetails/"+product_id}> {title } </Link> </Breadcrumb.Item>   
+    <Breadcrumb.Item> <Link to={"/productdetails/"+product_id} style={{ color: '#E10028' }}> {title } </Link> </Breadcrumb.Item>   
 
 </Breadcrumb>
 </div>

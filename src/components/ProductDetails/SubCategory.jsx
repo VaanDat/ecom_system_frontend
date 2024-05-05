@@ -55,11 +55,11 @@ class SubCategory extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
 
-  <Breadcrumb.Item> <Link to={"/productcategory/"+Category}> {Category } </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to={"/productcategory/"+Category} style={{ color: '#E10028' }}> {Category } </Link> </Breadcrumb.Item>   
 
-  <Breadcrumb.Item> <Link to={"/productsubcategory/"+Category+"/"+SubCategory}> {SubCategory } </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to={"/productsubcategory/"+Category+"/"+SubCategory} style={{ color: '#E10028' }}> {SubCategory } </Link> </Breadcrumb.Item>   
 
 </Breadcrumb>
 </div>

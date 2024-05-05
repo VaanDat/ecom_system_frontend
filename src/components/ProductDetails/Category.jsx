@@ -53,8 +53,8 @@ class Category extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
-  <Breadcrumb.Item> <Link to={"/productcategory/"+Category}> {Category } </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to={"/productcategory/"+Category} style={{ color: '#E10028' }}> {Category } </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 

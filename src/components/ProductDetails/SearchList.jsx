@@ -53,9 +53,9 @@ class SearchList extends Component {
 
                <div className="breadbody">
                <Breadcrumb>
-  <Breadcrumb.Item> <Link to="/"> Home </Link> </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/" style={{ color: '#E10028' }}> Home </Link> </Breadcrumb.Item>
 
-  <Breadcrumb.Item> <Link to={"/productbysearch/"+SearchKey}> Search For :  {SearchKey } </Link> </Breadcrumb.Item>   
+  <Breadcrumb.Item> <Link to={"/productbysearch/"+SearchKey} style={{ color: '#E10028' }}> Search For :  {SearchKey } </Link> </Breadcrumb.Item>   
 </Breadcrumb>
 </div>
 
