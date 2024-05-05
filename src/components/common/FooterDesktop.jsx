@@ -81,9 +81,10 @@ export class FooterDesktop extends Component {
                </div>
                
                <h5 className="footer-menu-title">SOCIAL LINK</h5>
-               <a href={this.state.facbook_link} target="_blank"><i className="fab m-1 h4 fa-facebook social-icon"></i></a>
-               <a href={this.state.instagram_link} target="_blank"><i className="fab m-1 h4 fa-instagram social-icon"></i></a>
-               <a href={this.state.twitter_link} target="_blank"><i className="fab m-1 h4 fa-twitter social-icon"></i></a>
+               <a href={this.state.facbook_link} target="_blank"><i className="fab m-1 h4 fa-facebook social-icon text-primary"></i></a>
+               <a href={this.state.instagram_link} target="_blank"><i className="fab m-1 h4 fa-instagram social-icon text-danger"></i></a>
+               <a href={this.state.twitter_link} target="_blank"><i className="fab m-1 h4 fa-twitter social-icon text-info"></i></a>
+
 
           </Col>
 

@@ -112,11 +112,13 @@ class NavMenuDesktop extends Component {
                     <Navbar fixed={"top"} className="navbar" bg="light">
                         <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
                             <Row>
-                                <Col lg={4} md={4} sm={12} xs={12}>
-                                    <img onClick={this.MenuBarClickHandler} className="bar-img" src={Bars} />
-                                    <Link to="/"> <img className="nav-logo" src={Logo} /> </Link>
-                                </Col>
-
+                            <Col lg={4} md={4} sm={12} xs={12}>
+                                <img onClick={this.MenuBarClickHandler} className="bar-img" src={Bars} />
+                                <Link to="/" style={{ textDecoration: 'none' }} className="link-no-underline">
+                                    <img className="nav-logo" src={Logo} />
+                                    <span className="title">MU - Shop</span>
+                                </Link>
+                            </Col>
                                 <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
                                     <div className="input-group w-100">
                                         <input onChange={this.SearchOnChange} type="text" className="form-control" />
@@ -125,8 +127,10 @@ class NavMenuDesktop extends Component {
                                     </div>
                                 </Col>
 
-                                <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12} className="d-flex justify-content-end">
-                                    {buttons}
+                                <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
+                                    <div className="buttons-container">
+                                        {buttons}
+                                    </div>
                                 </Col>
                             </Row>
                             {this.searchRedirect()}
