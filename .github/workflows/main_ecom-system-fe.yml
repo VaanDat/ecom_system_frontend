@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - ecom-system-fe
+name: Build and deploy ASP app to Azure Web App - ecom-system-fe
 
 on:
   push:
@@ -16,25 +16,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Node.js version
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
+      - name: Setup MSBuild path
+        uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
-      
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Restore NuGet packages
+        run: nuget restore
+
+      - name: Publish to folder
+        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: node-app
-          path: .
+          name: ASP-app
+          path: '/published/**'
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -46,18 +47,18 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: node-app
+          name: ASP-app
       
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CFF58B2AC8D34B9AA63A4BBE7044CDF0 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5F665228E78948E8ACCFEAD8F064C0EC }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A8F2F1AF81BE4561AFE67C18DCC55C54 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_79BED62E67224A628C6C9BDD26608958 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_68C982C916294440BBFDD75C3EF03625 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7956FC40282C4AFBBEC44DD45B46AD92 }}
 
-      - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v2
+      - name: Deploy to Azure Web App
         id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
         with:
           app-name: 'ecom-system-fe'
           slot-name: 'Production'
